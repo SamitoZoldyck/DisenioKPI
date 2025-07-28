@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Define el charset para que los caracteres especiales se muestren correctamente -->
+    <meta charset="utf-8" />
+    
+    <!-- Enlace al archivo de estilos CSS, que da formato a la página -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Enlace a la librería de FontAwesome para usar iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Contenedor principal del juego de toma de decisiones -->
+    <main class="decision-game">
+
+      <!-- Sección de introducción con un video de fondo -->
+      <section class="intro">
+        <div class="intro-video-wrapper">
+          <!-- Video de fondo que se reproduce automáticamente y está en bucle -->
+          <video class="intro-bg-video" src="1.mp4" autoplay muted loop></video>
+        </div>
+        
+        <div class="intro-content">
+          <!-- Título del juego y breve descripción de cómo se juega -->
+          <h1 class="manrope-title">KPI para Soporte técnico al cliente interno de un ISC</h1>
+          <p>
+            Bienvenido a Technova S.A. de C.V.
+            Analiza la situación, responde las preguntas y evalua a 5 empleados sobre su desempeño en su área asignada
+            (Soporte Técnico al cliente interno).
+          </p>
+        </div>
+      </section>
+
+      <!-- Sección con bloques informativos sobre el test y la toma de decisiones -->
+      <section class="info-section">
+        
+        <!-- Fila con dos bloques de información -->
+        <div class="info-blocks-row">
+          <!-- Primer bloque informativo sobre el objetivo del test -->
+          <div class="info-block">
+            <h2>- Objetivo del test</h2>
+            <p>
+              El propósito de esta evaluación es obtener una medición objetiva y estructurada
+              del desempeño de los colaboradores del área de Soporte Técnico Interno (ISC). 
+              A través de este instrumento, se busca conocer la calidad del servicio brindado, 
+              así como identificar fortalezas y oportunidades de mejora en aspectos como atención, 
+              eficacia, comunicación y trato al usuario interno.
+            </p>
+          </div>
+          
+          <!-- Segundo bloque informativo sobre qué es la toma de decisiones -->
+          <div class="info-block">
+            <h2>- ¿Qué es un KPI?</h2>
+            <p>
+              Un KPI (Key Performance Indicator) es un indicador clave de rendimiento 
+              que permite medir el nivel de cumplimiento de un objetivo específico dentro 
+              de una organización o función profesional. Son métricas cuantificables que ayudan 
+              a monitorear y mejorar el desempeño individual, de equipos o procesos, favoreciendo 
+              la toma de decisiones informada.
+            </p>
+          </div>
+        </div>
+
+        <!-- Fila con un bloque que explica los 8 pasos del proceso de toma de decisiones -->
+        <div class="info-blocks-row">
+          <div class="info-block" style="display: flex; flex-direction: row; gap: 32px; align-items: flex-start;">
+              <h2>- Los KPI deben ser SMART:</h2>
+              <ol style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 24px; list-style-position: inside; padding-left: 0;">
+                <li><strong>Specific (Específicos)</strong></li>
+                <li><strong>Measurable (Medibles)</strong></li>
+                <li><strong>Achievable (Alcanzables)</strong></li>
+                <li><strong>Realistic (Relevantes)</strong></li>
+                <li><strong>Time-bound (Limitados en el tiempo)</strong></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fila con recomendaciones para el test -->
+        <div class="info-blocks-row">
+          <div class="info-block">
+            <h2>- Recomendaciones</h2>
+            <ul>
+              <li>Lee detenidamente cada una de las 10 preguntas antes de responder.</li>
+              <li>Selecciona la opción que mejor refleje tu experiencia real durante la atención recibida.</li>
+              <li>Contesta con honestidad y objetividad para asegurar resultados útiles y confiables.</li>
+              <li>Recuerda que esta evaluación es anónima y tiene fines de mejora profesional.</li>
+              <li>Una vez completada la evaluación, asegúrate de que todas las preguntas tengan respuesta.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Botón que redirige al usuario al área del test -->
+      <button class="btntest"  onclick="window.location.href='Question.html'">Test!</button>
+  </body>
+</html>

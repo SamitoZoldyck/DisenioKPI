@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Poppins";
+
+}
+
+.titulo {
+  background-color: #5dc1b9;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+table {
+  width: 90%;
+  margin: 10px auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: #00a396;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+td {
+  padding: 15px;
+  background-color: #e3f2fd;
+  border: 1px solid #ccc;
+}
+
+.nombre {
+  background-color: #fffbe6;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.info-blocks-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.info-block {
+  background: #f2f7f7;
+  border: 2px solid #76c0ba;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  padding: 24px 20px;
+  flex: 1 1 0;
+  min-width: 250px;
+  transition: box-shadow 0.4s cubic-bezier(0.77, 0, 0.18, 1),
+    border-color 0.4s cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+.info-block:hover {
+  border-color: #00a396;
+  box-shadow: 0 0 24px 4px #00a396, 0 2px 16px rgba(44, 62, 80, 0.12);
+  animation: infoGlow 1.2s linear;
+}
